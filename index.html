@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-card">
+      <img src="olalekan.jpg" alt="Profile Picture" data-testid="profilePicture">
+      <h2 data-testid="fullName">OLALEKAN ABDULHAFEEZ ADEJUMO</h2>
+      <h4 data-testid="jobTitle">CNG Operator/ Aspiring Front-End Developer</h4>
+      <p data-testid="shortBio">
+        As a dedicated front-end developer, I specialize in crafting seamless, 
+        high-performance user interfaces using the latest web technologies. 
+        With a strong foundation in HTML, CSS, and JavaScript, 
+        I am constantly exploring new frameworks and tools to enhance my development process. 
+        My goal is to create intuitive, responsive websites that provide an exceptional user experience, 
+        while continuously improving my skills and contributing to the tech community.
+      </p>
+
+      <p data-testid="currentLocation" class="address">
+        <span>📍</span> Lagos, Nigeria
+      </p>
+      <p data-testid="emailAddress" class="email">
+        <span>📧</span> <a href="mailto:adejumoolalekan16@yahoo.com">adejumoolalekan16@yahoo.com<a>
+      </p>
+
+      <div  class="social-link" data-testid="socialLinks">
+        <a class="links" href="https://www.linkedin.com/in/olalekan-adejumo-a23ab0136" target="_blank">LinkedIn</a>
+        <a class="links" href="https://github.com/olalekan202-4" target="_blank">GitHub</a>
+      </div>
+     
+      <p data-testid="currentTimeUTC" id="utcTime"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

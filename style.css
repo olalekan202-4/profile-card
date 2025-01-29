@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, rgba(128, 128, 128, 0.212), #f8f9fa);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  color: #0e0b0b8c;
+  font-size: 22px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.profile-card h4 {
+  color: #6e8efb;
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.profile-card p {
+  color: #444;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.address, .email {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.address a, .email a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: normal;
+  margin-left: 8px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.address a:hover, .email a:hover {
+  color: #a777e3;
+  transform: translateX(4px);
+}
+
+.address span, .email span {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.social-link {
+  margin-top: 12px;
+}
+
+.links {
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  color: #fff;
+  background: #6e8efb;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.social-link a:hover {
+  background: #a777e3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .profile-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-card h4 {
+    font-size: 16px;
+  }
+
+  .profile-card p {
+    font-size: 13px;
+  }
+
+  .social-links a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .address, .email {
+    font-size: 1rem;
+  }
+}
