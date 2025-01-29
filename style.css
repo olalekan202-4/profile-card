@@ -103,6 +103,11 @@ body {
   background: #a777e3;
 }
 
+#utcTime {
+  font-weight: bold;
+  padding: 10px;
+}
+
 /* Responsive Styles */
 @media (max-width: 600px) {
   .profile-card {
